@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Pup — 8-Bit Shih Tzu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>PIXEL PUP</h1>
+      <p class="subtitle">~ pet the shih tzu ~</p>
+    </header>
+
+    <div id="status-bar">
+      <div class="stat">
+        <span class="stat-label">HAPPY</span>
+        <div class="stat-meter"><div class="stat-fill" id="happy-fill"></div></div>
+      </div>
+      <div class="stat">
+        <span class="stat-label">ENERGY</span>
+        <div class="stat-meter"><div class="stat-fill" id="energy-fill"></div></div>
+      </div>
+      <div class="stat">
+        <span class="stat-label">LOVE</span>
+        <div class="stat-meter"><div class="stat-fill" id="love-fill"></div></div>
+      </div>
+    </div>
+
+    <div id="mood-text">click the pup to pet!</div>
+
+    <div id="canvas-wrap">
+      <canvas id="game-canvas"></canvas>
+      <div id="particles-layer"></div>
+    </div>
+
+    <div id="buttons">
+      <button class="action-btn" id="btn-pet" data-action="pet">&#x1F90D; Pet</button>
+      <button class="action-btn" id="btn-treat" data-action="treat">&#x1F356; Treat</button>
+      <button class="action-btn" id="btn-play" data-action="play">&#x1F3BE; Play</button>
+      <button class="action-btn" id="btn-sleep" data-action="sleep">&#x1F319; Sleep</button>
+    </div>
+
+    <div id="footer">
+      <button id="sound-toggle" title="Toggle sound">&#x1F50A;</button>
+      <span class="footer-text">tap anywhere on pup to interact</span>
+    </div>
+  </div>
+
+  <script src="sprites.js"></script>
+  <script src="audio.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
